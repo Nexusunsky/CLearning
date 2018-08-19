@@ -14,6 +14,13 @@
         l或L后缀表示该值是long类型，ll或LL后缀表明该值是long long类型。
 
 基本数据类型：
+    格式化输出：
+    十六进制：
+        printf("%x\n", j);  //输出结果为:    2f
+        printf("%X\n", j);  //输出结果为:    2F
+        printf("%#x\n", j); //输出结果为:    0x2f
+        printf("%#X\n", j); //输出结果为:    0X2F    %#X推荐使用
+
     关键字：
         基本数据类型由11个关键字组成:
             int，long，short，unsigned，char，float，double，signed，_Bool，_Complex，_Imaginary。
@@ -32,8 +39,6 @@
     字符类型：
         char ---字符类型的关键字，有些编译器使用有符号的char，而有些则使用无符号的char。
         在需要时，可在char前面加上关键字signed或unsigned来指明具体哪种类型。
-
-
 
     实浮点类型：
         实浮点类型可以表示正浮点数和负浮点数。
